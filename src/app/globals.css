@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-1: #f7fbff;
+  --bg-2: #eaf3ff;
+  --bg-3: #fff8f2;
+  --ink: #1f2a3a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top left, var(--bg-2), transparent 55%),
+    radial-gradient(circle at 30% 10%, #dfeaff, transparent 45%),
+    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-3) 100%);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+::selection {
+  background: #b3d4fc;
+  color: #1f2a3a;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(179, 212, 252, 0.4);
+}
