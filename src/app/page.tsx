@@ -1,5 +1,5 @@
 "use client";
-import { supabase } from "../lib/supabaseClient";
+import { supabase } from "@/lib/supabaseClient";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Camera, Pause, Play, Plus, X } from "lucide-react";
